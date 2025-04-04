@@ -1,0 +1,10 @@
+- first_step
+    - Quick start
+- CDW_SDW
+    - Sample for sweeping parameter
+- band_plot
+    - Sample for plotting band
+- dos_plot
+    - Sample for plotting DOS
+- finiteT
+    - Sample for calculating temperature dependence of magnetic properties

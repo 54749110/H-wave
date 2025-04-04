@@ -1,0 +1,36 @@
+[log]
+print_level = 0
+print_step = 1
+
+[mode]
+mode = "UHFk"
+
+[mode.param]
+2Sz = 0
+Ncond = 100
+IterationMax = 1000
+EPS = 10
+Mix = 0.3
+RndSeed = 123456789
+T = 0.01
+CellShape = [
+    50,
+    1,
+    1,
+]
+SubShape = [
+    1,
+    1,
+    1,
+]
+
+[file.input.interaction]
+path_to_input = "./"
+Geometry = "geometry.dat"
+Transfer = "transfer.dat"
+
+[file.output]
+path_to_output = "./output/"
+energy = "energy.dat"
+eigen = "eigen.dat"
+green = "green.dat"

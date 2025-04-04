@@ -1,0 +1,13 @@
+[mode]
+  mode = "UHFk"
+  flag_fock = true
+
+[mode.param]
+  IterationMax = 10000
+  EPS = 12
+  Mix = 0.6
+  RndSeed = 123456789
+  T = 0.0
+  Ncond = 256
+  CellShape = [ 16, 16, 1 ]
+  SubShape = [ 2, 2, 1 ]

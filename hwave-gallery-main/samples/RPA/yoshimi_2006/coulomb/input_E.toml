@@ -1,0 +1,27 @@
+[log]
+  print_level = 1
+
+[mode]
+  mode = "RPA"
+  calc_scheme = "reduced"
+[mode.param]
+  T = 0.1
+  CellShape = [64,64,1]
+  SubShape = [1,1,1]
+  filling = 0.75
+  Nmat = 1024
+  matsubara_frequency = "center"
+[file]
+[file.input]
+  path_to_input = "output"
+  chi0q_init = "chi0q.npz"
+[file.input.interaction]
+  path_to_input = "./"
+  Geometry = "geom.dat"
+  Transfer = "transfer.dat"
+  CoulombIntra = "coulombintra.dat"
+  CoulombInter = "coulombinter_E.dat"
+[file.output]
+  path_to_output = "output"
+  chiq = "chiq_E"
+  matsubara_frequency = "center"  # default

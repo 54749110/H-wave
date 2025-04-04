@@ -1,0 +1,42 @@
+[log]
+print_level = 0
+print_step = 1
+
+[mode]
+mode = "UHFk"
+flag_fock = true
+
+[mode.param]
+IterationMax = 10000
+EPS = 12
+Mix = 0.6
+RndSeed = 123456789
+T = 0.0
+Ncond = 256
+CellShape = [
+    16,
+    16,
+    1,
+]
+SubShape = [
+    2,
+    2,
+    1,
+]
+
+[file.input]
+path_to_input = "input_13_sdw"
+initial = "initial.npz"
+
+[file.input.interaction]
+path_to_input = "input_13_sdw"
+Geometry = "geom.dat"
+Transfer = "transfer.dat"
+CoulombIntra = "coulombintra.dat"
+CoulombInter = "coulombinter.dat"
+
+[file.output]
+path_to_output = "output_13_sdw"
+energy = "energy.dat"
+eigen = "eigen.dat"
+green = "green.dat"

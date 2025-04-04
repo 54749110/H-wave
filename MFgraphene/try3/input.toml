@@ -1,0 +1,25 @@
+[log]
+print_level = 1
+print_step = 20
+[mode]
+mode = "UHFr"
+[mode.param]
+Nsite = 36
+2Sz = 0
+Ncond = 48
+IterationMax = 1000
+EPS = 6
+RndSeed = 123456789
+T = 0.0
+[file]
+[file.input]
+path_to_input = ""
+OneBodyG = "greenone.def"
+[file.input.interaction]
+Trans = "trans.def"
+CoulombIntra = "coulombintra.def"
+[file.output]
+path_to_output = "output"
+energy = "energy.dat"
+eigen = "eigen"
+green = "green.dat"
